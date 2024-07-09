@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: var(--primary-color);
+}
+
+:root {
+    --primary-color: white;
+    --btn-color: #ff0000;
+}
+
+#main {
+    background-image: url("Assets/Images/bg\ img.jpg");
+    height: 92vh;
+    width: 100%;
+    min-height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: max(1400px, 100vw); */
+    background-size: cover;
+    position: relative;
+}
+
+#main .box {
+    min-height: 92vh;
+    width: 100%;
+    /* min-height: auto; */
+    position: absolute;
+    top: 0%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.btn {
+    border: none;
+}
+
+#main nav {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main nav img {
+    position: relative;
+    z-index: 10;
+}
+
+#navButton {
+    border: 1px solid black;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    padding: 6px 18px;
+    padding-bottom: 8px;
+    transition: all 0.5s ease-out;
+}
+
+#navButton a {
+    font-size: 14px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#main #hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(0 0 0 / 30%); */
+    gap: 15px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    height: calc(100vh - 75px);
+    z-index: 5;
+}
+
+#hero :nth-child(1) {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#hero :nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#hero :nth-child(3) {
+    font-size: 1.26rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#main .info {
+    display: flex;
+    width: 100%;
+    max-width: 36.625rem;
+    align-items: flex-start;
+    margin: 1rem auto 0;
+    flex-direction: row;
+}
+
+#main .info input {
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border-radius: 3px;
+    padding: 15px 0px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(124, 124, 124, 0.5);
+}
+
+#main .info input::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#main .info .btn {
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    padding: 9px 0px;
+    transition: all 0.5s ease-out;
+}
+
+#main .btn:hover {
+    background-color: #be0000;
+}
+
+.separationLine {
+    height: 8px;
+    background-color: #232323;
+    
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    flex-direction: row;
+    position: relative;
+}
+
+.set {
+    flex-basis: 50%;
+}
+
+.next>div :nth-child(1) {
+    font-size: 3rem;
+    line-height: 2;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.next>div :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+.second .setcont {
+    text-align: left;
+    position: relative;
+    padding-top: 15px;
+}
+
+.boxshot #str {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.second .setcont #download {
+    font-size: 1rem;
+    color: #0071eb;
+    text-align: left;
+}
+
+
+.ImgSection {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.ImgSection img {
+    position: relative;
+    z-index: 10;
+}
+
+.ImgSection video {
+    position: absolute;
+    top: 20%;
+    overflow: hidden;
+    z-index: -1;
+    left: 14%;
+}
+
+.second .cont h2 {
+    line-height: 1.5;
+}
+
+.second .cont p {
+    line-height: 1.5;
+}
+
+.boxshot {
+    position: absolute;
+    z-index: 10;
+    background: black;
+    bottom: 10%;
+    left: 23%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 7px 10px;
+    width: 53%;
+    gap: 15px;
+    text-align: left;
+}
+
+.boxshot img {
+    position: relative;
+    padding-right: 13px;
+    float: left;
+}
+
+
+.third {
+    display: flex;
+    justify-content: flex-start;
+    min-height: auto;
+    /* height: 55vh; */
+    margin: 50px 10px;
+}
+
+.watch {
+    max-width: 47vw;
+    text-align: left;
+    padding-left: 25%;
+}
+
+.third .watch :nth-child(1) {
+    line-height: 1.4;
+}
+
+.third .watch :nth-child(2) {
+    line-height: 1.5;
+}
+
+.fourth {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: auto;
+    width: 90vw;
+    margin: auto;
+}
+
+.fourth .kids h2 {
+    line-height: 1.5;
+}
+
+/* faq */
+
+#questions {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#questions h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 45px 0px 25px 0px;
+}
+
+
+.toggle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    width: 100%;
+    background-color: #2f2f2f;
+    text-align: left;
+    padding: 25px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 5px;
+    position: relative;
+    transition: all .4s ease-out;
+}
+
+
+.toggle:hover {
+    background-color: #474646;
+}
+
+.set {
+    width: 100%;
+    margin: 70px auto;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#questions .wrappers {
+    width: 78%;
+    height: 100%;
+    text-align: left;
+    padding: 5px 15px;
+    margin: auto;
+}
+
+.wrappers .content {
+    background-color: #2f2f2f;
+    position: relative;
+    padding: 0px 20px;
+    height: 0;
+    overflow: hidden;
+    outline: none;
+    color: var(--primary-color);
+    font-weight: 400;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+.wrappers.active .content {
+    padding: 20px;
+    height: fit-content;
+}
+
+.wrappers.active .icon {
+    transform: rotate(-45deg);
+}
+
+.wrappers .icon {
+    transition: transform .2s ease-out;
+}
+
+#questions .information .extra {
+    display: flex;
+    max-width: 40%;
+    position: relative;
+    margin: 25px auto;
+    margin-bottom: 50px;
+}
+
+
+#questions .information .extra input {
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border-radius: 3px;
+    padding: 15px 0px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(119, 119, 119, 0.5);
+}
+
+#questions .information h3 {
+    padding-top: 40px;
+}
+
+#questions .extra input::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#questions .information .btn {
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    padding: 8px 0px;
+    transition: all 0.5s ease-out;
+}
+
+#questions .btn:hover {
+    background-color: #be0000;
+}
+
+.information .ready {
+    font-size: 1.28rem;
+    font-weight: 400;
+    width: 100%;
+    /* line-height: 1.5; */
+}
+
+/* Footer Sections */
+
+footer {
+    width: 70%;
+    margin: 30px auto;
+    min-height: auto;
+    padding: 30px;
+}
+
+.footerSec {
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    gap: 25px;
+}
+
+.wrapper #none {
+    text-decoration: none;
+}
+
+.wrapper a,
+footer span a {
+    color: rgba(255, 255, 255, 0.7);
+}

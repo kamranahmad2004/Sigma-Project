@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
+
+    body {
+        background-image: url("Assets/Images/bg\ page.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        position: relative;
+        background: linear-gradient(#0000009f, #0000009f);
+        z-index: 0;
+    }
+
+    .setting {
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    nav {
+        height: 100px;
+        position: relative;
+        padding-top: 30px;
+        display: flex;
+        margin-left: 10%;
+    }
+
+    nav a img {
+        cursor: pointer;
+    }
+
+    .set {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: inherit;
+        z-index: 2;
+        position: relative;
+    }
+
+    #main .form-wrapper {
+        padding: 45px 60px;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 470px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .form-wrapper h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .form-wrapper form {
+        margin: 25px 0px 60px;
+    }
+
+    .form-wrapper .form-action {
+        height: 60px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form-action input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        padding: .5rem 1rem 0.5rem;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.7);
+        background: rgba(32, 32, 32, 0.4);
+        /* background: transparent; */
+    }
+
+    .form-action input::placeholder {
+        opacity: 0;
+    }
+
+
+    .form-action label {
+        position: absolute;
+        left: 12px;
+        top: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.1rem;
+        font-weight: 400;
+        pointer-events: none;
+    }
+
+    .form-action input:focus+label {
+        top: 5px;
+        font-size: 12px;
+        transition: all 0.4s ease-out;
+    }
+
+    .form-action input:not(:placeholder-shown)+label {
+        top: 5px;
+        font-size: 12px;
+    }
+
+
+    .about :nth-child(1) {
+        width: 100%;
+        background: #ff0000;
+        padding: .6rem 1rem 0.6rem;
+        border-radius: 5px;
+        color: rgba(255, 255, 255);
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        height: inherit;
+        cursor: pointer;
+        transition: all .5s ease-out;
+    }
+
+    .about :nth-child(1):hover {
+        background: #c40000;
+    }
+
+    .about p {
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .about :nth-child(3) {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background: rgb(61, 61, 61, 0.7);
+        height: inherit;
+        padding: .6rem 1rem 0.6rem;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all .5s ease-out;
+    }
+
+    .about :nth-child(3):hover {
+        background: rgba(43, 42, 42, 0.7);
+    }
+
+    .about a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .about a:hover {
+        text-decoration: underline;
+    }
+
+    .remember {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .remember label {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255);
+    }
+
+    .remember input {
+        cursor: pointer;
+        position: relative;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 0.125rem;
+        left: -0.8125rem;
+    }
+
+    .form-help p {
+        margin: 18px 0px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.1rem;
+        font-weight: 400px;
+    }
+
+    .form-help p a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 500;
+    }
+
+    .form-help p a:hover {
+        text-decoration: underline;
+    }
+
+    .form-wrapper span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+    }
+
+    .form-wrapper span a {
+        background-color: transparent;
+        border: none;
+        color: #0071eb;
+        cursor: pointer;
+        font-size: inherit;
+        padding: 0;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.767);
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    footer .nextset {
+        width: 80%;
+        margin: auto;
+    }
+
+    .footerSec {
+        margin: auto;
+        color: rgba(255, 255, 255, 0.7);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        gap: 25px;
+    }
+
+    .wrapper #none {
+        text-decoration: none;
+    }
+
+    .wrapper a,
+    footer span a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    footer span a {
+        text-decoration: none;
+    }
+
+    /* Responsivenes */
+
+    @media only screen and (max-width: 1270px) {
+
+        nav {
+            width: 92%;
+        }
+
+        nav img {
+            width: 130px;
+        }
+
+
+        #main .form-wrapper {
+            width: 430px;
+            padding: 40px 50px;
+            min-height: auto;
+            z-index: 1;
+        }
+
+        .about a,
+        .about p {
+            margin: 16px 0px;
+        }
+
+        .form-help p {
+            margin: 16px 0px;
+        }
+
+
+        .form-wrapper h2 {
+            font-size: 27px;
+        }
+
+
+        .form-wrapper .about button,
+        .about a,
+        .about p {
+            font-size: 16px;
+        }
+
+        .remember label,
+        .form-help p {
+            font-size: 16px;
+        }
+
+        .remember input {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        footer .nextset {
+            width: 100%;
+            padding: 0px 30px;
+        }
+    }
+
+
+    @media only screen and (max-width: 960px) {
+        .footerSec {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        nav img {
+            width: 120px;
+        }
+
+        nav {
+            margin-left: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background: black;
+        }
+
+        #main .form-wrapper {
+            width: 100%;
+            padding: 40px 30px;
+        }
+
+        .form-wrapper h2 {
+            font-size: 2rem;
+        }
+
+        .form-action input {
+            font-weight: 500;
+        }
+
+        #hrline {
+            height: 1px;
+            background-color: gray;
+            width: 100%;
+        }
+
+        footer .nextset {
+            padding: 0px 20px;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+
+        .nextset a {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<body>
+    <div class="setting"></div>
+    <div class="container">
+        <section id="main">
+            <nav>
+                <a href="index.html"><img src="Assets/Images/Logo.svg" alt="logo" width="160px"></a>
+            </nav>
+            <div class="set">
+                <div class="form-wrapper">
+                    <h2>Sign In</h2>
+                    <form action="">
+                        <div class="form-action">
+                            <input type="email" name="UserEmail" id="Email" placeholder="Email or mobile number"
+                                required>
+                            <label for="Email">Email or mobile number</label>
+                        </div>
+
+                        <div class="form-action">
+                            <input type="password" name="UserPassword" id="password" placeholder="Password" required>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="about">
+                            <button>Sign In</button>
+                            <p>OR</p>
+                            <button>Use a Sign-In Code</button>
+                            <a href="#">Forget password?</a>
+                        </div>
+
+                        <div class="form-help">
+                            <div class="remember">
+                                <input type="checkbox" name="remembering" id="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+
+                            <p>New to Netflix? <a href="index.html" target="_blank"><strong>Sign up now.</strong></a>
+                            </p>
+                        </div>
+                        <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn
+                                more.</a></span>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="hrline"></div>
+        <footer>
+            <div class="nextset">
+                <span>
+                    <a href="#">Questions? Contact us.</a>
+                </span>
+                <div class="footerSec">
+                    <div class="wrapper">
+                        <a href="#">FAQ</a>
+                        <a href="#">Cookie Preferences</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#">Help Center</a>
+                        <a href="#">Corporate Information</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#">Terms of Use</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <a href="#">Privacy</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

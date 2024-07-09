@@ -1,0 +1,580 @@
+@media screen and (min-width: 1086px) and (max-width: 1200px) {
+
+    #main nav {
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+
+    #questions .information .btn {
+        font-size: 17px;
+    }
+
+    #questions .wrappers{
+        width: 90%;
+    }
+
+    .next {
+        padding: 0px 10px;
+    }
+
+    .next .ImgSection {
+        width: 80%;
+    }
+
+    .next .set {
+        width: 100%;
+    }
+
+    .second {
+        width: auto;
+    }
+
+    .second .ImgSection {
+        width: 45%;
+    }
+
+    .second .ImgSection img {
+        width: 100%;
+    }
+
+    .second .boxshot img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .second .cont h2 {
+        line-height: 1.3;
+    }
+
+    .fourth #kidsImg img {
+        width: 100%;
+    }
+
+    .fourth .kids {
+        width: 75%;
+    }
+
+    footer {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1085px) {
+    #main nav {
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+
+    #hero :nth-child(1) {
+        font-size: 2.7rem;
+    }
+
+    .next {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .next .ImgSection img {
+        width: 100%;
+    }
+
+    .second .ImgSection {
+        width: 45%;
+    }
+
+    .second .ImgSection img {
+        width: 100%;
+    }
+
+    .second .boxshot img {
+        width: 30%;
+        height: 25%;
+    }
+
+    .second .cont h2 {
+        line-height: 1.3;
+    }
+
+    .watch {
+        max-width: 45vw;
+        padding-left: 20px;
+    }
+
+    .fourth #kidsImg img {
+        width: 100%;
+    }
+
+    .fourth .kids {
+        width: 75%;
+    }
+
+    #questions .wrappers{
+        width: 100%;
+    }
+
+    #questions .information .extra {
+        max-width: 60%;
+    }
+
+    #questions h2 {
+        line-height: 2.2;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+
+    #main nav {
+        justify-content: space-between;
+        padding: 0px 35px;
+    }
+
+    #main nav img {
+        width: 120px;
+    }
+
+    #hero :nth-child(1) {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #hero :nth-child(2),
+    :nth-child(3) {
+        font-size: 1.125rem;
+        font-size: 500;
+        overflow: hidden;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .next {
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 10px;
+    }
+
+    .next>div :nth-child(1) {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .next>div :nth-child(2) {
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .next .ImgSection #myimage {
+        width: 100%;
+    }
+
+
+    .boxshot {
+        min-height: auto;
+    }
+
+    .second {
+        width: 100%;
+    }
+
+    .second .ImgSection {
+        min-height: auto;
+        position: relative;
+        order: 2;
+    }
+
+    .second .cont {
+        order: 1;
+        padding: 3.5rem 0;
+    }
+
+    .second .setcont {
+        text-align: left;
+        float: left;
+        margin: 0px auto;
+        padding-top: 8px;
+        line-height: normal;
+    }
+
+    .second .setcont #str {
+        font-size: 1rem;
+    }
+
+    .second .setcont #download {
+        font-size: 0.9rem;
+    }
+
+    .boxshot span img {
+        height: 60px;
+    }
+
+    .watch {
+        max-width: 100%;
+        text-align: center;
+        align-content: center;
+        margin: 80px auto;
+        padding-left: 0;
+    }
+
+    .watch p {
+        flex-wrap: wrap;
+    }
+
+
+    .fourth #kidsImg {
+        order: 2;
+    }
+
+    .fourth #kidsImg img {
+        width: 100%;
+    }
+
+    .fourth .kids {
+        order: 1;
+        padding: 3.5rem 0;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    #questions h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.3;
+        margin-bottom: 0;
+    }
+
+    #questions .wrappers{
+        width: 100%;
+    }
+    #questions .wrappers .toggle{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    #questions .content {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #questions .ready {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+
+    #questions .information .extra {
+        max-width: 60%;
+    }
+
+    #questions .information .btn {
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footerSec {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .wrapper a {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #main nav {
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+    #main nav img {
+        width: 110px;
+    }
+
+    #main .info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #main .info input {
+        width: 80%;
+        text-align: left;
+    }
+
+    #main .info .btn {
+        width: 47%;
+        font-size: 1.1rem;
+    }
+
+    #hero :nth-child(1) {
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #hero :nth-child(2),
+    :nth-child(3) {
+        font-size: 1.130rem;
+        font-size: 500;
+        overflow: hidden;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .next {
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 10px 0px;
+    }
+
+    .next>div :nth-child(1) {
+        font-size: 1.8rem;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+    }
+
+    .next>div :nth-child(2) {
+        font-size: 1.130rem;
+        font-weight: 400;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .next .ImgSection #myimage {
+        width: 100%;
+    }
+
+    .next .ImgSection video {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .boxshot {
+        min-height: auto;
+    }
+
+    .second .boxshot img {
+        width: 50px;
+    }
+
+    .second .ImgSection {
+        min-height: auto;
+        position: relative;
+        order: 2;
+    }
+
+    .second .cont {
+        order: 1;
+        padding: 3.5rem 0;
+    }
+
+    .second .setcont {
+        text-align: left;
+        float: left;
+        margin: 0px auto;
+        padding-top: 8px;
+        line-height: normal;
+    }
+
+    .second .setcont #str {
+        font-size: 14px;
+    }
+
+    .second .setcont #download {
+        font-size: 13px;
+    }
+
+    .boxshot span img {
+        height: 60px;
+    }
+
+    .third {
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .watch {
+        max-width: 100%;
+        text-align: center;
+        align-content: center;
+        margin: 80px auto;
+        padding-left: 0;
+    }
+
+    .watch p {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .fourth {
+        padding: 0px 10px;
+        margin: auto;
+    }
+
+    .fourth #kidsImg {
+        order: 2;
+    }
+
+    .fourth #kidsImg img {
+        width: 100%;
+    }
+
+    .fourth .kids {
+        order: 1;
+        padding: 3.5rem 0;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    #questions h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2;
+        margin-bottom: 0;
+    }
+
+    #questions .set{
+        padding: 15px 8px;
+    }
+
+    #questions .wrappers{
+        width: 100%;
+    }
+
+    #questions .wrappers .toggle{
+        font-size: 1.2rem;
+        padding: 20px 15px;
+        font-weight: 400;
+    }
+
+    #questions .content {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    #questions .ready {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+
+    #questions .information {
+        width: 100%;
+        margin: auto;
+    }
+
+    #questions .information .extra {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 80%;
+    }
+
+    #questions .information .btn {
+        font-size: 1rem;
+        width: 47%;
+    }
+
+    #question .information h3 {
+        text-align: center;
+    }
+
+    #questions ul li {
+        width: 90%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footerSec {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .wrapper a {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 455px) {
+
+    #main nav {
+        padding: 0px 10px;
+    }
+
+    #main nav img {
+        width: 100px;
+    }
+
+    .second .boxshot img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .boxshot {
+        width: 65%;
+    }
+
+    .boxshot .setcont #str,
+    .boxshot .setcont #download {
+        line-height: 1.2;
+        font-size: 0.8rem;
+    }
+
+    #questions .information {
+        margin: auto;
+    }
+
+    #questions .information .btn {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    #questions .wrappers{
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .wrapper a {
+        font-size: 0.9rem;
+        padding-right: 20px;
+    }
+
+    .wrapper {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    #main #hero{
+        height: calc(100vh - 40px);
+    }
+
+    #questions .wrappers .toggle{
+        font-size: 1.1rem;
+    }
+
+    #questions .content {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+}
